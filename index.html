@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:900|Work+Sans:300" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="text/javascript" src="skrollr.js"></script>
+    <script type="text/javascript" src="skrollr.menu.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <title>Tololi Online</title>
+</head>
+<body>
+    <!-------------------------------------------------- DESKTOP DISPLAY ----------------------------------------------------------------------------->
+
+    <nav id="large-devices">
+        <p class="black" style="text-decoration: none; color: var(--smoke-black); display: block; font-weight: 600; font-size: 34px; font-family: 'Poppins', sans-serif;">tololi</p>
+        <ul>
+          <li class="active"><a href="#home" data-menu-top="0">Home</a></li>
+          <li><a href="#about" data-menu-top="100">About</a></li>
+          <li><a href="#services" data-menu-top="300">Services</a></li>
+          <li><a href="portfolio/index.html">Portfolio</a></li>
+          <li><a href="#contact" data-menu-top="400">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container"  data-0="transform:translateX(0%);" data-1000="transform:translateX(-400%);" data-cursor="-color-yellow">
+        <section data-cursor="-color-yellow" data-cursor-text=" " id="home">
+            <div class="content">
+                    <h2>Empower Your Business with Cutting-Edge Digital Solutions</h2>
+                    <p>Maximize Your Online Potential with Our Expert Services</p>
+                    <button class="button"><a href="#about" data-menu-top="100">Get Started Today</a></button>
+            </div>
+            <div class="change"></div>
+        </section>
+        <section data-cursor="-color-black" data-cursor-text=" " id="about">
+            <img src="https://d3rp5jatom3eyn.cloudfront.net/assets/images/11964/want-to-shop-online-shop-tololi2021-03-190.jpg" alt="" id="img-1">  
+            <div class="content">
+                <h2 class="black">About Us</h2>
+                <p>
+                    At tololi, we believe that technology has the power to change the world for the better. That's why we're dedicated to designing innovative tech solutions that address the unique challenges facing developing countries. 
+                </p>
+            </div>
+        </section>
+        <section data-cursor="-color-yellow" data-cursor-text=" " id="about-2" >
+            <div class="black-box">
+                <h2>Introduction</h2>
+                Welcome to tololi, a leading provider of digital solutions. Our mission is to empower developing countries with the latest technology and expertise to maximize their online potential. With a focus on delivering exceptional results, we are committed to helping our clients stay ahead of the competition.
+            </div>
+            <div class="yellow-box" data-cursor="-color-black">
+                <h2>Our Approach</h2>
+                At tololi, we take a customized approach to each project, taking the time to understand your unique business goals and challenges. Our team works closely with you to develop a tailored solution that meets your specific needs and exceeds your expectations.
+            </div>      
+            <div class="yellow-box" data-cursor="-color-black">
+                <h2>Our Team</h2>
+                Our team of young professionals is dedicated to delivering the best possible results for our clients. From website design and development to online marketing and advertising, our experts have the skills and expertise to help your business succeed online.
+            </div>
+            <div class="black-box">
+                <h2>Mission Statement</h2>
+                Our mission is to empower developing countries to succeed in the digital world by delivering innovative, effective, and customized digital solutions. We are committed to providing exceptional customer service, using the latest technology, and fostering long-term partnerships with our clients. Our goal is to help our clients achieve their digital goals and succeed in a constantly evolving digital landscape.
+            </div>       
+        </section>
+        <section id="services" data-cursor="-color-yellow">
+            <div class="information">
+                <div class="overlay"></div>
+                <img src="images/image-removebg-preview.png" class="mobile">
+            </div>
+            <div class="box" >
+                <h2 id="heading">Ecommerce Solutions</h2>
+                <b id="text">Our team will work with you to design and develop an online store that is not only easy to use but also optimized for maximum sales. With a focus on delivering results, we'll help you build an e-commerce platform that drives success.</b>
+            </div>
+            <div class="controls" >
+                <ion-icon name="chevron-up-outline" id="upBtn"></ion-icon>
+                <h1 style="font-size: 900;"><b>Services</b></h1>
+                <ion-icon name="chevron-down-outline" id="downBtn"></ion-icon>
+            </div>
+        </section>
+        <section id="contact" data-cursor="-color-yellow" data-cursor-text=" ">  
+            <div class="content">
+                <h2 class="yellow">Get in Touch with Us Today!</h2>
+                <p style="color:black">
+                    Let's work together to achieve your digital goals.
+                    
+                </p><br><br><br><br><br>
+                <b>Phone number: +264 81 200 9492</b><br>
+                <b>Email address: operations@tololishop.com</b><br>
+                <b>Physical address: 13 Mozart Street, Windhoek, Namibia</b><br>
+            </div>
+            <form action="https://formspree.io/f/xnqrvnaj" method="post" class="form" target="_blank">
+                <input type="text" name="Name" placeholder="Name" class="input" required/>
+                <input type="email" name="Email" placeholder="Email" class="input" required/><br>
+                <input type="number" name="Phone Number" placeholder="Phone Number" class="input" required/><br>
+                <textarea name="Message" id="" placeholder="Message" cols="60" rows="10" class="input-large"></textarea><br><br><br>
+                <button class="btn" type="submit">Submit</button>
+            </form>
+        </section>
+    </div>
+
+    <!-------------------------------------------------- MOBILE DISPLAY ----------------------------------------------------------------------------->
+
+    <script type="text/javascript">
+        AOS.init();
+
+        var s = skrollr.init();
+
+        skrollr.menu.init(s, {
+            //skrollr will smoothly animate to the new position using `animateTo`.
+            animate: true,
+
+            //The easing function to use.
+            easing: 'sqrt',
+
+            //Multiply your data-[offset] values so they match those set in skrollr.init
+            scale: 2,
+
+            //How long the animation should take in ms.
+            duration: function(currentTop, targetTop) {
+                //By default, the duration is hardcoded at 500ms.
+                return 500;
+
+                //But you could calculate a value based on the current scroll position (`currentTop`) and the target scroll position (`targetTop`).
+                //return Math.abs(currentTop - targetTop) * 10;
+            },
+
+            //If you pass a handleLink function you'll disable `data-menu-top` and `data-menu-offset`.
+            //You are in control where skrollr will scroll to. You get the clicked link as a parameter and are expected to return a number.
+            // handleLink: function(link) {
+            //     return link;//Hardcoding 400 doesn't make much sense.
+            // },
+
+            //By default skrollr-menu will only react to links whose href attribute contains a hash and nothing more, e.g. `href="#foo"`.
+            //If you enable `complexLinks`, skrollr-menu also reacts to absolute and relative URLs which have a hash part.
+            //The following will all work (if the user is on the correct page):
+            //http://example.com/currentPage/#foo
+            //http://example.com/currentDir/currentPage.html?foo=bar#foo
+            ///?foo=bar#foo
+            complexLinks: false,
+
+            //This event is triggered right before we jump/animate to a new hash.
+            change: function(newHash, newTopPosition) {
+                //Do stuff
+            },
+
+            //Add hash link (e.g. `#foo`) to URL or not.
+            updateUrl: false //defaults to `true`.
+        });
+
+        const cursor = new MouseFollower({
+            container: document.body,
+            speed: 0.3
+        });
+
+
+        var heading = document.getElementById("heading");
+        var text = document.getElementById("text");
+
+        upBtn.onclick = function() {
+            rotateSum = rotateValue + "rotate(-90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+        }
+
+        var headingContent = [
+            "Website Design and Development",
+            "App Design and Development",
+            "Bespoke Software Development",
+            "E-commerce Solutions",
+            
+        ];
+        var textContent = [
+            "A professional website is the cornerstone of your online presence. Our team of experts will work with you to design and develop a website that is not only visually stunning, but also user-friendly and optimized for search engines. With a focus on delivering results, we'll help you build a website that truly represents your brand and drives business success.",
+            "Our team of experienced designers and developers will work with you to create a custom app that meets the unique needs of your business and exceeds your expectations. Whether you're looking to build a simple utility app or a complex, feature-rich app, we have the expertise and resources to make it happen.",
+            "Our team of experienced developers will work with you to create custom software that meets the unique needs of your business and drives results. Whether you're looking to automate your processes, streamline your workflow, or develop a new software solution, we have the expertise and resources to make it happen.",
+            "Our team will work with you to design and develop an online store that is not only easy to use but also optimized for maximum sales. With a focus on delivering results, we'll help you build an e-commerce platform that drives business success."
+        ];
+        var count = 0;
+        downBtn.onclick = function() {
+            if (count < 0){
+                count = 3;
+            }
+            heading.innerHTML = headingContent[count];
+            text.innerHTML =  textContent[count];
+            count--;
+        }
+        upBtn.onclick = function() {
+            if (count > 3){
+                count = 0;
+            }
+            heading.innerHTML = headingContent[count];
+            text.innerHTML =  textContent[count];
+            count++;
+        }
+    </script>
+</body>
+</html>
