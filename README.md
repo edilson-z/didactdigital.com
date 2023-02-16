@@ -1,6 +1,6 @@
 # tololi.com
 
-Welcome to my tololi.com's repository! This repository contains the source code for my projects and is constantly being updated.
+Welcome to my tololi.com's repository! This repository contains the source code for tololi.com and is constantly being updated.
 
 ## About Project
 
