@@ -16,7 +16,6 @@
     <script type="text/javascript" src="skrollr.js"></script>
     <script type="text/javascript" src="skrollr.menu.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="script.js"></script>
     <title>Tololi Online</title>
 </head>
 <body>
@@ -58,11 +57,11 @@
             </div>
             <div class="yellow-box" data-cursor="-color-black">
                 <h2>Our Approach</h2>
-                <span>At tololi, we take a customized approach to each project, taking the time to understand your unique business goals and challenges. Our team works closely with you to develop a tailored solution that meets your specific needs and exceeds your expectations.</span>
+                <span style="color:black">At tololi, we take a customized approach to each project, taking the time to understand your unique business goals and challenges. Our team works closely with you to develop a tailored solution that meets your specific needs and exceeds your expectations.</span>
             </div>      
             <div class="yellow-box" data-cursor="-color-black">
                 <h2>Our Team</h2>
-                <span>Our team of young professionals is dedicated to delivering the best possible results for our clients. From website design and development to online marketing and advertising, our experts have the skills and expertise to help your business succeed online.</span>
+                <span style="color:black">Our team of young professionals is dedicated to delivering the best possible results for our clients. From website design and development to online marketing and advertising, our experts have the skills and expertise to help your business succeed online.</span>
             </div>
             <div class="black-box">
                 <h2>Mission Statement</h2>
@@ -102,11 +101,14 @@
                 <button class="btn" type="submit">Submit</button>
             </form>
         </section>
+        <section>
+
+        </section>
     </div>
 
     <!-------------------------------------------------- MOBILE DISPLAY ----------------------------------------------------------------------------->
     <nav class="nav" id="small-devices">
-		<h3>tololi</h3>
+		<h3 style="color:white">tololi</h3>
 		<div class="menu" >
 			<strong></strong>
 			<strong></strong>
@@ -130,8 +132,8 @@
         <a href="#" target="_blank">E-tendering</a><br /><br />
         
         <h4>Get In Touch</h4><br />
-		<a href="tel:0818779053">Call Us</a>
-		<a href="mailto:dannibuga@gmail.com">Send an Email</a>
+		<a href="tel:+264812009492">Call Us</a>
+		<a href="mailto:operations@tololishop.com">Send an Email</a>
 	</aside>
     <div class="mobile-device">
         <section id="home_">
@@ -140,7 +142,65 @@
                 <p>Maximize Your Online Potential with Our Expert Services</p>
                 <button class="button"><a href="#about_">Get Started Today</a></button>
             </div>
-            <div class="change"></div>
+        </section>
+        <section id="about_">
+            <img src="https://d3rp5jatom3eyn.cloudfront.net/assets/images/11964/want-to-shop-online-shop-tololi2021-03-190.jpg" alt="" id="img-1">  
+            <div>
+                <h2 class="black">About Us</h2>
+                <p>
+                    At tololi, we believe that technology has the power to change the world for the better. That's why we're dedicated to designing innovative tech solutions that address the unique challenges facing developing countries. 
+                </p>
+            </div>
+        </section>
+        <section id="about-2_" >
+            <div class="black-box">
+                <h2>Introduction</h2>
+                <p>Welcome to tololi, a leading provider of digital solutions. Our mission is to empower developing countries with the latest technology and expertise to maximize their online potential. With a focus on delivering exceptional results, we are committed to helping our clients stay ahead of the competition.</p>
+            </div>
+            <div class="yellow-box">
+                <h2>Our Approach</h2>
+                <p style="color:black">At tololi, we take a customized approach to each project, taking the time to understand your unique business goals and challenges. Our team works closely with you to develop a tailored solution that meets your specific needs and exceeds your expectations.</p>
+            </div> 
+            <div class="black-box">
+                <h2>Mission Statement</h2>
+                <p>Our mission is to empower developing countries to succeed in the digital world by delivering innovative, effective, and customized digital solutions. We are committed to providing exceptional customer service, using the latest technology, and fostering long-term partnerships with our clients. Our goal is to help our clients achieve their digital goals and succeed in a constantly evolving digital landscape.</p>
+            </div>       
+            <div class="yellow-box">
+                <h2>Our Team</h2>
+                <p style="color:black">Our team of young professionals is dedicated to delivering the best possible results for our clients. From website design and development to online marketing and advertising, our experts have the skills and expertise to help your business succeed online.</p>
+            </div>
+        </section>
+        <section id="services">
+            <img src="images/image-removebg-preview.png" id="image-mobile">
+            <div class="box-mobile" >
+                <h2 id="heading-mobile">Ecommerce Solutions</h2>
+                <p id="text-mobile" style="color:black">Our team will work with you to design and develop an online store that is not only easy to use but also optimized for maximum sales. With a focus on delivering results, we'll help you build an e-commerce platform that drives success.</p>
+            </div><br />
+            <div class="controls-mobile" >
+                <ion-icon name="arrow-back-outline" id="upBtn-mobile"></ion-icon>
+                <b>Services</b>
+                <ion-icon name="arrow-forward-outline" id="downBtn-mobile"></ion-icon>
+            </div>
+        </section>
+        <section id="contact_">  
+            <div class="content" style="padding-top: 5vh !important">
+                <h2 class="yellow">Get in Touch with Us Today!</h2>
+                <p style="color:black">
+                    Let's work together to achieve your digital goals.
+                </p>
+            </div><br>
+
+            <form action="https://formspree.io/f/xnqrvnaj" method="post" class="form" target="_blank">
+                <input type="text" name="Name" placeholder="Name" class="input" required/>
+                <input type="email" name="Email" placeholder="Email" class="input" required/><br>
+                <input type="number" name="Phone Number" placeholder="Phone Number" class="input" required/><br>
+                <textarea name="Message" id="" placeholder="Message" cols="60" rows="10" class="input-large"></textarea>
+                <button class="btn" type="submit">Submit</button>
+            </form>
+
+            <p style="color:black">Phone number: +264 81 200 9492</p>
+            <p style="color:black">Email address: operations@tololishop.com</p>
+            <p style="color:black">Physical address: 13 Mozart Street, Windhoek, Namibia</p>
         </section>
     </div>
 
@@ -155,64 +215,69 @@
         
         AOS.init();
 
-        var s = skrollr.init();
+        if (window.innerWidth > 768) {
+            var s = skrollr.init();
 
-        skrollr.menu.init(s, {
-            //skrollr will smoothly animate to the new position using `animateTo`.
-            animate: true,
+            skrollr.menu.init(s, {
+                //skrollr will smoothly animate to the new position using `animateTo`.
+                animate: true,
 
-            //The easing function to use.
-            easing: 'sqrt',
+                //The easing function to use.
+                easing: 'sqrt',
 
-            //Multiply your data-[offset] values so they match those set in skrollr.init
-            scale: 2,
+                //Multiply your data-[offset] values so they match those set in skrollr.init
+                scale: 2,
 
-            //How long the animation should take in ms.
-            duration: function(currentTop, targetTop) {
-                //By default, the duration is hardcoded at 500ms.
-                return 500;
+                //How long the animation should take in ms.
+                duration: function(currentTop, targetTop) {
+                    //By default, the duration is hardcoded at 500ms.
+                    return 500;
 
-                //But you could calculate a value based on the current scroll position (`currentTop`) and the target scroll position (`targetTop`).
-                //return Math.abs(currentTop - targetTop) * 10;
-            },
+                    //But you could calculate a value based on the current scroll position (`currentTop`) and the target scroll position (`targetTop`).
+                    //return Math.abs(currentTop - targetTop) * 10;
+                },
 
-            //If you pass a handleLink function you'll disable `data-menu-top` and `data-menu-offset`.
-            //You are in control where skrollr will scroll to. You get the clicked link as a parameter and are expected to return a number.
-            // handleLink: function(link) {
-            //     return link;//Hardcoding 400 doesn't make much sense.
-            // },
+                //If you pass a handleLink function you'll disable `data-menu-top` and `data-menu-offset`.
+                //You are in control where skrollr will scroll to. You get the clicked link as a parameter and are expected to return a number.
+                // handleLink: function(link) {
+                //     return link;//Hardcoding 400 doesn't make much sense.
+                // },
 
-            //By default skrollr-menu will only react to links whose href attribute contains a hash and nothing more, e.g. `href="#foo"`.
-            //If you enable `complexLinks`, skrollr-menu also reacts to absolute and relative URLs which have a hash part.
-            //The following will all work (if the user is on the correct page):
-            //http://example.com/currentPage/#foo
-            //http://example.com/currentDir/currentPage.html?foo=bar#foo
-            ///?foo=bar#foo
-            complexLinks: false,
+                //By default skrollr-menu will only react to links whose href attribute contains a hash and nothing more, e.g. `href="#foo"`.
+                //If you enable `complexLinks`, skrollr-menu also reacts to absolute and relative URLs which have a hash part.
+                //The following will all work (if the user is on the correct page):
+                //http://example.com/currentPage/#foo
+                //http://example.com/currentDir/currentPage.html?foo=bar#foo
+                ///?foo=bar#foo
+                complexLinks: false,
 
-            //This event is triggered right before we jump/animate to a new hash.
-            change: function(newHash, newTopPosition) {
-                //Do stuff
-            },
+                //This event is triggered right before we jump/animate to a new hash.
+                change: function(newHash, newTopPosition) {
+                    //Do stuff
+                },
 
-            //Add hash link (e.g. `#foo`) to URL or not.
-            updateUrl: false //defaults to `true`.
-        });
+                //Add hash link (e.g. `#foo`) to URL or not.
+                updateUrl: false //defaults to `true`.
+            });
 
-        const cursor = new MouseFollower({
-            container: document.body,
-            speed: 0.3
-        });
+            const cursor = new MouseFollower({
+                container: document.body,
+                speed: 0.3
+            });
+        }
+        
 
 
         var heading = document.getElementById("heading");
         var text = document.getElementById("text");
+        var headingMobile = document.getElementById("heading-mobile");
+        var textMobile = document.getElementById("text-mobile");
 
-        upBtn.onclick = function() {
-            rotateSum = rotateValue + "rotate(-90deg)";
-            circle.style.transform = rotateSum;
-            rotateValue = rotateSum;
-        }
+        var downBtn = document.getElementById("downBtn");
+        var upBtn = document.getElementById("upBtn");
+
+        var downBtnMobile = document.getElementById("downBtn-mobile");
+        var upBtnMobile = document.getElementById("upBtn-mobile");
 
         var headingContent = [
             "Website Design and Development",
@@ -236,12 +301,28 @@
             text.innerHTML =  textContent[count];
             count--;
         }
+        downBtnMobile.onclick = function() {
+            if (count < 0){
+                count = 3;
+            }
+            headingMobile.innerHTML = headingContent[count];
+            textMobile.innerHTML =  textContent[count];
+            count--;
+        }
         upBtn.onclick = function() {
             if (count > 3){
                 count = 0;
             }
             heading.innerHTML = headingContent[count];
             text.innerHTML =  textContent[count];
+            count++;
+        }
+        upBtnMobile.onclick = function() {
+            if (count > 3){
+                count = 0;
+            }
+            headingMobile.innerHTML = headingContent[count];
+            textMobile.innerHTML =  textContent[count];
             count++;
         }
     </script>

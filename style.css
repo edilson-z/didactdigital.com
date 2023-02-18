@@ -39,9 +39,6 @@ span {
 #text {
     font-size: 1.35vw;
 }
-b {
-    margin: 10px
-}
 h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
@@ -173,12 +170,14 @@ nav li a {
     overflow: hidden;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
-/* .container section:nth-child(5){
-    background-color: var(--smoke);
-    padding-top: var(--top-padding);
-} */
 .container section:nth-child(5){
     background-color: var(--smoke);
+    padding-top: var(--top-padding);
+    /* grid-template-columns: 50% auto; */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.container section:nth-child(6){
+    background-color: var(--smoke-black);
     padding-top: var(--top-padding);
     /* grid-template-columns: 50% auto; */
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -294,7 +293,7 @@ nav li a {
     padding-left: 45px;
 }
 #img-1 {
-    max-width: 80%;
+    max-width: 85%;
     align-self: center;
     justify-self: center;
 }
@@ -395,13 +394,32 @@ nav li a {
     #large-devices {
         display: none;
     }
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    html {
+        scroll-behavior: smooth;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    p {
+        font-size: 18px;
+    }
+    b {
+        font-size: 20px;
+        color: black;
+    }
     .nav {
         position:fixed;
         top: 0;
         left: 0;
         width: 100%;
         height: 70px;
-        background: #16161a;
+        /* background: #16161a; */
+        /* background: rgba(255, 255, 255, 0); */
+        background-color: var(--smoke-black);
         display: flex;
         align-items: center;
         padding: 0 20px;
@@ -415,13 +433,14 @@ nav li a {
         color: var(--smoke); 
         display: block; 
         font-weight: 600; 
-        font-size: 2.125vw; 
+        font-size: 34px; 
         font-family: 'Poppins', sans-serif;
     }
     .menu strong {
         width:30px;
         height:4px;
-        background:#fff;
+        /* background: var(--smoke-black); */
+        background-color: white;
         margin:2px;
     }
     .sidebar {
@@ -434,7 +453,8 @@ nav li a {
         width:200px;
         height:100vh;
         bottom:0;
-        background: #16161a;
+        /* background: #16161a; */
+        background: var(--smoke-black);
         padding:20px;
         z-index:9;
         color:#fff;
@@ -449,7 +469,7 @@ nav li a {
         color: var(--smoke); 
         display: block; 
         font-weight: 600; 
-        font-size: 2.125vw; 
+        font-size: 34px; 
         font-family: 'Poppins', sans-serif;
     }
     .sidebar a {
@@ -464,6 +484,76 @@ nav li a {
         display: flex;
         flex-direction: column;
         cursor:pointer;
+    }
+    .content-mobile {
+        padding-top: 80px;
+        background-color: var(--smoke-black);
+    }
+    .button {
+        margin-top: 10px;
+        margin-bottom: 80px;
+        font-size: 14px;
+    }
+    .mobile-device section:nth-child(2){
+        background-color: var(--gold);
+        padding-top: var(--top-padding);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .mobile-device section:nth-child(3){
+        background-color: var(--gold);
+        padding-top: var(--top-padding);
+        grid-template-columns: 50% auto;
+        grid-template-rows: 50% auto;
+        
+    }
+    .mobile-device section:nth-child(4){
+        background-color: var(--smoke);
+        padding-top: var(--top-padding);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px 40px;
+    }
+    .mobile-device section:nth-child(5){
+        background-color: var(--smoke);
+        padding-top: var(--top-padding);
+        /* grid-template-columns: 50% auto; */
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    #image-mobile {
+        max-height: 250px;
+        width: auto;
+    }
+    #upBtn-mobile {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        color: var(--smoke-black);
+    }
+    #downBtn-mobile {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        color: var(--smoke-black);
+    }
+    .form {
+        min-height: 400px;
+
+    }
+    .form .input {
+        font-size: 14px;
+    }
+    .form .input-large {
+        font-size: 14px;
+    }
+    .form button {
+        font-size: 14px;
     }
 }
 @media (min-width: 768px) {
