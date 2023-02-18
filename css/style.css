@@ -543,6 +543,13 @@ nav li a {
         cursor: pointer;
         color: var(--smoke-black);
     }
+    .content-contact {
+        padding: 0 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
     .form {
         min-height: 400px;
 
