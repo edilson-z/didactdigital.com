@@ -14,6 +14,9 @@
   --light-yellow: #EFE4B0;
   --smoke-black: black;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 .viewport {
   height: calc(var(--viewportHeight) * 1px);
@@ -52,6 +55,12 @@
   width: 100%;
   height: auto;
   top: 40%;
+}
+
+.viewport .scene3D-container .scene3D > div img{
+ max-width: 700px;
+ height: auto;
+ cursor: pointer;
 }
 
 @media only screen and (min-width: 600px) {
@@ -206,7 +215,11 @@
 }
 
 body {
-  background-color: black;
+  /* background-color: var(--gold); */
+  background: url("/images/yellow-background.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat:no-repeat;
   color: #272935;
   padding: 0;
   margin: 0;
@@ -216,8 +229,10 @@ h1 {
   font-family: "Playfair Display SC", serif;
   margin: 0;
   position: fixed;
-  bottom: 1rem;
+  top: 1rem;
   left: 1rem;
+  /* bottom: 1rem;
+  left: 1rem; */
   text-align: center;
 }
 
@@ -229,7 +244,8 @@ h1 .logo {
 
 .link {
   /* color: white; */
-  color: #fcb90e;
+  /* color: #fcb90e; */
+  color: black;
   margin: 0;
   position: fixed;
   top: 1rem;

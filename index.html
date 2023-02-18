@@ -23,21 +23,22 @@
     <!-------------------------------------------------- DESKTOP DISPLAY ----------------------------------------------------------------------------->
 
     <nav id="large-devices">
-        <p class="black" style="text-decoration: none; color: var(--smoke-black); display: block; font-weight: 600; font-size: 34px; font-family: 'Poppins', sans-serif;">tololi</p>
+        <p class="black" style="text-decoration: none; color: var(--smoke-black); display: block; font-weight: 600; font-size: 2.5vw; font-family: 'Poppins', sans-serif;">tololi</p>
         <ul>
           <li class="active"><a href="#home" data-menu-top="0">Home</a></li>
           <li><a href="#about" data-menu-top="100">About</a></li>
           <li><a href="#services" data-menu-top="300">Services</a></li>
-          <li><a href="portfolio/index.html">Portfolio</a></li>
+          <li><a href="portfolio/index-gallery.html">Portfolio</a></li>
           <li><a href="#contact" data-menu-top="400">Contact</a></li>
+          <li><a href="#news" data-menu-top="500">News</a></li>
         </ul>
     </nav>
-    <div class="container"  data-0="transform:translateX(0%);" data-1000="transform:translateX(-400%);" data-cursor="-color-yellow">
+    <div class="container"  data-0="transform:translateX(0%);" data-1000="transform:translateX(-500%);" data-cursor="-color-yellow">
         <section data-cursor="-color-yellow" data-cursor-text=" " id="home">
             <div class="content">
-                    <h2>Empower Your Business with Cutting-Edge Digital Solutions</h2>
-                    <p>Maximize Your Online Potential with Our Expert Services</p>
-                    <button class="button"><a href="#about" data-menu-top="100">Get Started Today</a></button>
+                <h2>Empower Your Business with Cutting-Edge Digital Solutions</h2>
+                <p>Maximize Your Online Potential with Our Expert Services</p>
+                <button class="button"><a href="#about" data-menu-top="100">Get Started Today</a></button>
             </div>
             <div class="change"></div>
         </section>
@@ -53,19 +54,19 @@
         <section data-cursor="-color-yellow" data-cursor-text=" " id="about-2" >
             <div class="black-box">
                 <h2>Introduction</h2>
-                Welcome to tololi, a leading provider of digital solutions. Our mission is to empower developing countries with the latest technology and expertise to maximize their online potential. With a focus on delivering exceptional results, we are committed to helping our clients stay ahead of the competition.
+                <span>Welcome to tololi, a leading provider of digital solutions. Our mission is to empower developing countries with the latest technology and expertise to maximize their online potential. With a focus on delivering exceptional results, we are committed to helping our clients stay ahead of the competition.</span>
             </div>
             <div class="yellow-box" data-cursor="-color-black">
                 <h2>Our Approach</h2>
-                At tololi, we take a customized approach to each project, taking the time to understand your unique business goals and challenges. Our team works closely with you to develop a tailored solution that meets your specific needs and exceeds your expectations.
+                <span>At tololi, we take a customized approach to each project, taking the time to understand your unique business goals and challenges. Our team works closely with you to develop a tailored solution that meets your specific needs and exceeds your expectations.</span>
             </div>      
             <div class="yellow-box" data-cursor="-color-black">
                 <h2>Our Team</h2>
-                Our team of young professionals is dedicated to delivering the best possible results for our clients. From website design and development to online marketing and advertising, our experts have the skills and expertise to help your business succeed online.
+                <span>Our team of young professionals is dedicated to delivering the best possible results for our clients. From website design and development to online marketing and advertising, our experts have the skills and expertise to help your business succeed online.</span>
             </div>
             <div class="black-box">
                 <h2>Mission Statement</h2>
-                Our mission is to empower developing countries to succeed in the digital world by delivering innovative, effective, and customized digital solutions. We are committed to providing exceptional customer service, using the latest technology, and fostering long-term partnerships with our clients. Our goal is to help our clients achieve their digital goals and succeed in a constantly evolving digital landscape.
+                <span>Our mission is to empower developing countries to succeed in the digital world by delivering innovative, effective, and customized digital solutions. We are committed to providing exceptional customer service, using the latest technology, and fostering long-term partnerships with our clients. Our goal is to help our clients achieve their digital goals and succeed in a constantly evolving digital landscape.</span>
             </div>       
         </section>
         <section id="services" data-cursor="-color-yellow">
@@ -75,38 +76,83 @@
             </div>
             <div class="box" >
                 <h2 id="heading">Ecommerce Solutions</h2>
-                <b id="text">Our team will work with you to design and develop an online store that is not only easy to use but also optimized for maximum sales. With a focus on delivering results, we'll help you build an e-commerce platform that drives success.</b>
+                <span id="text">Our team will work with you to design and develop an online store that is not only easy to use but also optimized for maximum sales. With a focus on delivering results, we'll help you build an e-commerce platform that drives success.</span>
             </div>
             <div class="controls" >
                 <ion-icon name="chevron-up-outline" id="upBtn"></ion-icon>
-                <h1 style="font-size: 900;"><b>Services</b></h1>
+                <h3>Services</h3>
                 <ion-icon name="chevron-down-outline" id="downBtn"></ion-icon>
             </div>
         </section>
         <section id="contact" data-cursor="-color-yellow" data-cursor-text=" ">  
-            <div class="content">
+            <div class="content" style="padding-top: 5vh !important">
                 <h2 class="yellow">Get in Touch with Us Today!</h2>
                 <p style="color:black">
                     Let's work together to achieve your digital goals.
-                    
                 </p><br><br><br><br><br>
-                <b>Phone number: +264 81 200 9492</b><br>
-                <b>Email address: operations@tololishop.com</b><br>
-                <b>Physical address: 13 Mozart Street, Windhoek, Namibia</b><br>
+                <span style="color:black">Phone number: +264 81 200 9492</span><br>
+                <span style="color:black">Email address: operations@tololishop.com</span><br>
+                <span style="color:black">Physical address: 13 Mozart Street, Windhoek, Namibia</span><br>
             </div>
             <form action="https://formspree.io/f/xnqrvnaj" method="post" class="form" target="_blank">
                 <input type="text" name="Name" placeholder="Name" class="input" required/>
                 <input type="email" name="Email" placeholder="Email" class="input" required/><br>
                 <input type="number" name="Phone Number" placeholder="Phone Number" class="input" required/><br>
-                <textarea name="Message" id="" placeholder="Message" cols="60" rows="10" class="input-large"></textarea><br><br><br>
+                <textarea name="Message" id="" placeholder="Message" cols="60" rows="10" class="input-large"></textarea>
                 <button class="btn" type="submit">Submit</button>
             </form>
         </section>
     </div>
 
     <!-------------------------------------------------- MOBILE DISPLAY ----------------------------------------------------------------------------->
+    <nav class="nav" id="small-devices">
+		<h3>tololi</h3>
+		<div class="menu" >
+			<strong></strong>
+			<strong></strong>
+			<strong></strong>
+		</div>
+	</nav>
+	<aside class="sidebar" >
+ 		<h3>tololi</h3>
+        <a href="#home_">Home</a>
+        <a href="#about_">About</a>
+        <a href="#services_">Services</a>
+        <a href="portfolio/index-gallery.html">Portfolio</a>
+        <a href="#contact_">Contact</a>
+        <a href="#news_">News</a><br /><br />
+
+        <h4>Our Projects</h4>
+ 		<a href="https://tololishop.com" target="_blank">Tololishop</a>
+ 		<a href="https://market.tololishop.com" target="_blank">Tololi Market</a>
+		<a href ="#" target="_blank">Tololi App</a>
+		<a href="#" target="_blank">Sponge</a>
+        <a href="#" target="_blank">E-tendering</a><br /><br />
+        
+        <h4>Get In Touch</h4><br />
+		<a href="tel:0818779053">Call Us</a>
+		<a href="mailto:dannibuga@gmail.com">Send an Email</a>
+	</aside>
+    <div class="mobile-device">
+        <section id="home_">
+            <div class="content-mobile">
+                <h2>Empower Your Business with Cutting-Edge Digital Solutions</h2>
+                <p>Maximize Your Online Potential with Our Expert Services</p>
+                <button class="button"><a href="#about_">Get Started Today</a></button>
+            </div>
+            <div class="change"></div>
+        </section>
+    </div>
 
     <script type="text/javascript">
+        var menu = document.querySelector(".menu");
+
+        var sidebar = document.querySelector(".sidebar");
+
+        menu.addEventListener('click', function(){
+        sidebar.classList.toggle("show");
+        });
+        
         AOS.init();
 
         var s = skrollr.init();

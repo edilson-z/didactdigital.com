@@ -10,24 +10,34 @@
     --smoke: #E8E8E8;
     --light-yellow: #EFE4B0;
     --smoke-black: black;
-    --top-padding: 100px;
+    --top-padding: 15vh;
 }
 .content {
-    --top-em: 4em;
+    --top-em: 20vh;
 }
 
 body {
     font-family: 'Work Sans', sans-serif;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 16px;
     margin: 10px;
 }
 p {
     font-family: 'Work Sans', sans-serif;
     font-weight: 300;
-    font-size: 30px;
+    font-size: 1.875vw;
     color: white;
     margin: 10px;
+}
+span {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.45vw;
+    color: white;
+    margin: 10px;
+}
+#text {
+    font-size: 1.35vw;
 }
 b {
     margin: 10px
@@ -35,9 +45,12 @@ b {
 h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
-    font-size: 35px;
+    font-size: 2.5vw;
     color: var(--gold);
     margin: 10px;
+}
+#heading {
+    font-size: 2.35vw;
 }
 .black {
     color: var(--smoke-black) !important;
@@ -48,11 +61,12 @@ h2 {
 .button {
     background-color: var(--gold);
     width: auto;
-    height: 15mm;
+    /* height: auto; */
+    height: 8vh;
     margin: 10px;
     font-family: 'Work Sans', sans-serif;
     font-weight: 900;
-    font-size: 18px;
+    font-size: 1.5vw;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -117,7 +131,7 @@ nav li a {
     color: var(--smoke-black);
     display: block;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 1.25vw;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -217,20 +231,20 @@ nav li a {
     position: absolute;
 }
 .mobile {
-    width: 200px;
+    width: 15vw;
     position: absolute;
     top: 50%;
-    left: 30%;
+    left: 20%;
     transform: translateY(-50%);
     z-index: 10;
 }
 .box {
     z-index:11;
-    margin-left:40vw; 
-    margin-top: 15px;
+    margin-left: 30vw; 
+    margin-top: 5vw;
     width:40vw;
     background:var(--smoke-black);
-    max-height: 350px;
+    height: 45vh;
     color: white;
     display: flex;
     justify-content: center;
@@ -242,27 +256,28 @@ nav li a {
 }
 .controls {
     position: absolute;
-    right: 5%;
+    right: 15%;
     top: 50%;
     transform: translateY(-50%);
     text-align: center;
     margin-left: 50px;
 }
 .controls h3 {
+    font-size: 2.125vw;
     margin: 15px 0;
     color: black;
 }
 #upBtn {
-    width: 50px;
-    height: 50px;
+    width: 5vw;
+    height: 5vh;
     cursor: pointer;
-    color: var(--gold);
+    color: #3F3F3F;
 }
 #downBtn {
-    width: 50px;
-    height: 50px;
+    width: 5vw;
+    height: 5vh;
     cursor: pointer;
-    color: var(--gold);
+    color: #3F3F3F;
 }
 .overlay {
     width: 0;
@@ -309,8 +324,9 @@ nav li a {
     z-index: 1;
     background: #FFFFFF;
     max-width: 80%;
-    height: 420px;
-    margin: 0 auto 100px;
+    max-height: 70vh;
+    /* max-height: 450px; */
+    margin: 5vh auto 100px;
     padding: 45px;
     text-align: center;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
@@ -324,7 +340,7 @@ nav li a {
     margin: 0 0 15px;
     padding: 15px;
     box-sizing: border-box;
-    font-size: 14px;
+    font-size: 1vw;
 }
 .form .input-large {
     font-family: "Roboto", sans-serif;
@@ -336,19 +352,19 @@ nav li a {
     margin: 0 0 15px;
     padding: 15px;
     box-sizing: border-box;
-    font-size: 14px;
+    font-size: 1vw;
 }
 
 .form button {
     font-family: "Roboto", sans-serif;
     text-transform: uppercase;
     outline: 0;
-    background: #fcb90e;
+    background: var(--smoke-black);
     width: 100%;
     border: 0;
     padding: 15px;
     color: #FFFFFF;
-    font-size: 14px;
+    font-size: 1vw;
     -webkit-transition: all 0.3 ease;
     transition: all 0.3 ease;
     cursor: pointer;
@@ -359,7 +375,7 @@ nav li a {
 .form .message {
     margin: 15px 0 0;
     color: #b3b3b3;
-    font-size: 12px;
+    font-size: 0.75vw;
 }
 .form .message a {
     color: #fcb90e ;
@@ -372,20 +388,100 @@ nav li a {
     padding-left: 40px;
     padding-right: 40px;
 }
-@media screen and (max-width: 768px) {
-    .content {
-        --top-em: 0 !important;
-    }
-    .container section:nth-child(2) {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
-    .container section:nth-child(3) {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
+@media (max-width: 767px) {
     .container {
         display: none;
     }
     #large-devices {
         display: none;
+    }
+    .nav {
+        position:fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 70px;
+        background: #16161a;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        justify-content: space-between;
+        box-sizing: border-box;
+        margin-bottom: 40px;
+        z-index: 2;
+    }
+    .nav h3{
+        text-decoration: none; 
+        color: var(--smoke); 
+        display: block; 
+        font-weight: 600; 
+        font-size: 2.125vw; 
+        font-family: 'Poppins', sans-serif;
+    }
+    .menu strong {
+        width:30px;
+        height:4px;
+        background:#fff;
+        margin:2px;
+    }
+    .sidebar {
+        overflow-y:scroll
+    }
+    .sidebar {
+        position:fixed;
+        top:0;
+        left:0;
+        width:200px;
+        height:100vh;
+        bottom:0;
+        background: #16161a;
+        padding:20px;
+        z-index:9;
+        color:#fff;
+        transition:0.3s ease;
+        transform:translateX(-100%);
+    }
+    .sidebar.show{
+        transform:translateX(0);
+    }
+    .sidebar h3 {
+        text-decoration: none; 
+        color: var(--smoke); 
+        display: block; 
+        font-weight: 600; 
+        font-size: 2.125vw; 
+        font-family: 'Poppins', sans-serif;
+    }
+    .sidebar a {
+        display:block;
+        padding:8px;
+        color:#fff;
+        text-decoration:none;
+        border-bottom:1px solid #555;
+    }
+    .menu {
+        padding:8px;
+        display: flex;
+        flex-direction: column;
+        cursor:pointer;
+    }
+}
+@media (min-width: 768px) {
+    .mobile-device {
+        display: none;
+    }
+    #small-devices {
+        display: none;
+    }
+}
+@media (min-width: 1441px) {
+    .overlay {
+        border-top: 1000px solid var(--gold);
+        border-right: 1000px solid var(--smoke);
+        border-bottom: 1000px solid var(--gold);
+        border-left: 1000px solid var(--gold);
+        position: absolute;
+        left: 0;
+        top: 0;
     }
 }

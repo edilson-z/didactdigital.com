@@ -17,110 +17,149 @@ const perspectiveOrigin = {
 document.addEventListener("DOMContentLoaded", function() {
 
   var contents = [
-   { 
+    // { 
+    //   title: "Movie Name",
+    //   release_date: "2015-10-23",
+    //   director: "Edilson Zau",
+    //   description: "Lorem ipsum dolor sit amet, consectetur adip ",
+    //   image: "../images/image00001.jpeg",
+    //   link: ""
+    // }, 
+    // { 
+    //   title: "Movie Name",
+    //   release_date: "2015-10-23",
+    //   director: "Edilson Zau",
+    //   description: "Lorem ipsum dolor sit amet, consectetur adip ",
+    //   image: "../images/image00001.jpeg",
+    //   link: ""
+    // }, 
+    // { 
+    //   title: "Movie Name",
+    //   release_date: "2015-10-23",
+    //   director: "Edilson Zau",
+    //   description: "Lorem ipsum dolor sit amet, consectetur adip ",
+    //   image: "../images/Screenshot (216).png",
+    //   link: ""
+    // }, 
+    { 
       title: "Movie Name",
       release_date: "2015-10-23",
       director: "Edilson Zau",
       description: "Lorem ipsum dolor sit amet, consectetur adip ",
-      image: "http://via.placeholder.com/500x500"
+      image: "../images/image00001.jpeg",
+      link: ""
     }, 
     { 
       title: "Movie Name",
       release_date: "2015-10-23",
       director: "Edilson Zau",
       description: "Lorem ipsum dolor sit amet, consectetur adip ",
-      image: "http://via.placeholder.com/400x300"
+      image: "../images/image00003.jpeg",
+      link: ""
     }, 
     { 
       title: "Movie Name",
       release_date: "2015-10-23",
       director: "Edilson Zau",
       description: "Lorem ipsum dolor sit amet, consectetur adip ",
-      image: "http://via.placeholder.com/400x200"
+      image: "../images/image00004.jpeg",
+      link: ""
     }, 
     { 
       title: "Movie Name",
       release_date: "2015-10-23",
       director: "Edilson Zau",
       description: "Lorem ipsum dolor sit amet, consectetur adip ",
-      image: "http://via.placeholder.com/400x200"
+      image: "../images/image00005.jpeg",
+      link: ""
     }, 
     { 
       title: "Movie Name",
       release_date: "2015-10-23",
       director: "Edilson Zau",
       description: "Lorem ipsum dolor sit amet, consectetur adip ",
-      image: "http://via.placeholder.com/500x700"
+      image: "../images/image00002.jpeg",
+      link: ""
     }, 
     { 
       title: "Movie Name",
       release_date: "2015-10-23",
       director: "Edilson Zau",
       description: "Lorem ipsum dolor sit amet, consectetur adip ",
-      image: "http://via.placeholder.com/500x500"
+      image: "../images/image00006.jpeg",
+      link: ""
     }, 
     { 
       title: "Movie Name",
       release_date: "2015-10-23",
       director: "Edilson Zau",
       description: "Lorem ipsum dolor sit amet, consectetur adip ",
-      image: "http://via.placeholder.com/400x300"
+      image: "../images/image00007.jpeg",
+      link: ""
     }, 
     { 
       title: "Movie Name",
       release_date: "2015-10-23",
       director: "Edilson Zau",
       description: "Lorem ipsum dolor sit amet, consectetur adip ",
-      image: "http://via.placeholder.com/400x200"
+      image: "../images/image00008.jpeg",
+      link: ""
     }, 
     { 
       title: "Movie Name",
       release_date: "2015-10-23",
       director: "Edilson Zau",
       description: "Lorem ipsum dolor sit amet, consectetur adip ",
-      image: "http://via.placeholder.com/400x200"
+      image: "../images/image00009.jpeg",
+      link: ""
     }, 
     { 
       title: "Movie Name",
       release_date: "2015-10-23",
       director: "Edilson Zau",
       description: "Lorem ipsum dolor sit amet, consectetur adip ",
-      image: "http://via.placeholder.com/500x700"
+      image: "../images/image00010.jpeg",
+      link: ""
     }, 
     { 
       title: "Movie Name",
       release_date: "2015-10-23",
       director: "Edilson Zau",
       description: "Lorem ipsum dolor sit amet, consectetur adip ",
-      image: "http://via.placeholder.com/500x500"
+      image: "../images/image00011.jpeg",
+      link: ""
     }, 
     { 
       title: "Movie Name",
       release_date: "2015-10-23",
       director: "Edilson Zau",
       description: "Lorem ipsum dolor sit amet, consectetur adip ",
-      image: "http://via.placeholder.com/400x300"
+      image: "../images/image00012.jpeg",
+      link: ""
     }, 
     { 
       title: "Movie Name",
       release_date: "2015-10-23",
       director: "Edilson Zau",
       description: "Lorem ipsum dolor sit amet, consectetur adip ",
-      image: "http://via.placeholder.com/400x200"
+      image: "../images/image00013.jpeg",
+      link: ""
     }, 
     { 
       title: "Movie Name",
       release_date: "2015-10-23",
       director: "Edilson Zau",
       description: "Lorem ipsum dolor sit amet, consectetur adip ",
-      image: "http://via.placeholder.com/400x200"
+      image: "../images/image00014.jpeg",
+      link: ""
     }, 
     { 
       title: "Movie Name",
       release_date: "2015-10-23",
       director: "Edilson Zau",
       description: "Lorem ipsum dolor sit amet, consectetur adip ",
-      image: "http://via.placeholder.com/500x700"
+      image: "../images/image00015.jpeg",
+      link: ""
     }, 
   ];
   appendContents(contents);
@@ -131,7 +170,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function createContentItem(content) {
   return `<div>
-    <img src="${content.image}"/>
+    <a href="${content.image}"><img src="${content.image}"/></a>
   </div>
   `;
 }
