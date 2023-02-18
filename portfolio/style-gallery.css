@@ -216,7 +216,7 @@ html {
 
 body {
   /* background-color: var(--gold); */
-  background: url("/images/yellow-background.png");
+  background: url("../images/yellow-background.png");
   background-size: cover;
   background-attachment: fixed;
   background-repeat:no-repeat;

@@ -493,6 +493,7 @@ nav li a {
         margin-top: 10px;
         margin-bottom: 80px;
         font-size: 14px;
+        border: none;
     }
     .mobile-device section:nth-child(2){
         background-color: var(--gold);
