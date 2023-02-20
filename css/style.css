@@ -399,15 +399,16 @@ nav li a {
 .custom-search {
     position: relative;
     width: 300px;
-    /* padding-top: 20px; */
     margin: 20px auto; 
+    font-size: 16px;
 }
 .custom-search-input {
     width: 100%;
     border: 1px solid #ccc;
     border-radius: 100px;
     padding: 10px 100px 10px 20px; 
-    line-height: 1;
+    line-height: 2;
+    font-size: 16px;
     box-sizing: border-box;
     outline: none;
 }
@@ -429,6 +430,7 @@ footer {
     background-color: #fcb90e;
     color: white;
     text-align: center;
+    text-decoration: none;
 }
 @media (max-width: 767px) {
     .container {
