@@ -72,11 +72,11 @@ h2 {
     text-decoration: none;
     color: var(--smoke-black);
 }
-.-color-smoke{
-    color: var(--smoke);
-}
 .-color-yellow{
     color: var(--gold);
+}
+.-color-smoke{
+    color: #E8E8E8;
 }
 .-color-black{
     color: black;
@@ -177,10 +177,13 @@ nav li a {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 .container section:nth-child(6){
-    background-color: var(--smoke-black);
-    padding-top: var(--top-padding);
-    /* grid-template-columns: 50% auto; */
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* background-color: var(--smoke-black); */
+    background: url("/images/sharp.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* padding-top: var(--top-padding); */
+    grid-template-columns: 35% auto;
 }
 .change {
     width: 0;
@@ -249,7 +252,7 @@ nav li a {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border-radius: 50px;
+    /* border-radius: 50px; */
     transition: 1s;
     padding: 0 40px;
 }
@@ -386,6 +389,44 @@ nav li a {
 #details {
     padding-left: 40px;
     padding-right: 40px;
+}
+.mail-list-desktop {
+    margin-top: 7vh;
+    background-color: black;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+.mail-list-desktop h2, span{
+    text-align: left;
+    padding-right: 10px;
+}
+.mail-list-desktop .input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    height: 8vh;
+    width: 65%;
+    border: 0;
+    box-sizing: border-box;
+    font-size: 1vw;
+    margin: 10px
+}
+.mail .button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: var(--gold);
+    width: 20%;
+    border: 0;
+    border-radius: 0;
+    color: #FFFFFF;
+    font-size: 1vw;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
 }
 .mail-list {
     background-color: black;
@@ -571,7 +612,6 @@ footer {
     .mobile-device section:nth-child(5){
         background-color: var(--smoke);
         padding-top: var(--top-padding);
-        /* grid-template-columns: 50% auto; */
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
     #image-mobile {
@@ -620,7 +660,7 @@ footer {
         display: none;
     }
 }
-@media (min-width: 1441px) {
+@media (min-width: 1440px) {
     .overlay {
         border-top: 1000px solid var(--gold);
         border-right: 1000px solid var(--smoke);
@@ -629,5 +669,22 @@ footer {
         position: absolute;
         left: 0;
         top: 0;
+    }
+    .button {
+        height: 6vh;
+    }
+    .mail-list-desktop .input {
+        height: 6vh;
+    }
+    .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .form .input, button {
+        height: 6vh;
+    }
+    .form .input-large {
+        height: 10vh;
     }
 }
