@@ -6,7 +6,7 @@
     margin: 0;
 }
 :root {
-    --gold: #fcb90e;
+    --gold: #56aeff;
     --smoke: #E8E8E8;
     --light-yellow: #EFE4B0;
     --smoke-black: black;
@@ -468,7 +468,7 @@ nav li a {
     z-index: 2;
 }
 footer {
-    background-color: #fcb90e;
+    background-color: var(--gold);
     color: white;
     text-align: center;
     text-decoration: none;
