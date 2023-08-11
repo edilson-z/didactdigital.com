@@ -352,7 +352,7 @@ nav li a {
     padding-left: 45px;
 }
 #img-1 {
-    max-width: 85%;
+    max-width: 90%;
     align-self: center;
     justify-self: center;
 }
@@ -636,6 +636,11 @@ footer {
         margin-bottom: 80px;
         font-size: 14px;
         border: none;
+    }
+    #img-1 {
+        max-width: 100%;
+        align-self: center;
+        justify-self: center;
     }
     .mobile-device section:nth-child(2){
         background-color: var(--gold);
