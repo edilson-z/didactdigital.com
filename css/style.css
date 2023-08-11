@@ -12,6 +12,16 @@
     --smoke-black: black;
     --top-padding: 15vh;
 }
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #999;
+    border-radius: 10px;
+  }
+  
 .content {
     --top-em: 20vh;
 }
