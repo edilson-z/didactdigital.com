@@ -48,6 +48,7 @@ span {
 }
 #text {
     font-size: 1.35vw;
+    text-align: center;
 }
 h2 {
     font-family: 'Montserrat', sans-serif;
@@ -58,6 +59,7 @@ h2 {
 }
 #heading {
     font-size: 2.35vw;
+    text-align: center;
 }
 .black {
     color: var(--smoke-black) !important;
