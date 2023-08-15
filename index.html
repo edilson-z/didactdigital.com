@@ -40,7 +40,7 @@
                     <a href="https://www.jadegarden.menu/" target="_blank">Jade Garden Digital Menu</a>
                     <a href="https://marigold-hotels.com/" target="_blank">Marigold Hotel Website</a>
                     <!-- <a href="#" target="_blank">Sponge</a> -->
-                    
+
                 </div>
             </div>
             <!-- <li><a href="portfolio/index-gallery.html">Gallery</a></li> -->
@@ -104,10 +104,8 @@
                 <img src="images/image-removebg-preview.png" class="mobile">
             </div>
             <div class="box">
-                <h2 id="heading">Ecommerce Solutions</h2>
-                <span id="text">Our team will work with you to design and develop an online store that is not only easy
-                    to use but also optimized for maximum sales. With a focus on delivering results, we'll help you
-                    build an e-commerce platform that drives success.</span>
+                <h2 id="heading"></h2>
+                <span id="text"></span>
             </div>
             <div class="controls">
                 <ion-icon name="chevron-up-outline" id="upBtn"></ion-icon>
@@ -233,10 +231,8 @@
         <section id="services_">
             <img src="images/image-removebg-preview.png" id="image-mobile">
             <div class="box-mobile" data-aos="fade-up" data-aos-duration="800">
-                <h2 id="heading-mobile">Ecommerce Solutions</h2>
-                <p id="text-mobile" style="color:black">Our team will work with you to design and develop an online
-                    store that is not only easy to use but also optimized for maximum sales. With a focus on delivering
-                    results, we'll help you build an e-commerce platform that drives success.</p>
+                <h2 id="heading-mobile"></h2>
+                <p id="text-mobile" style="color:black"></p>
             </div><br />
             <div class="controls-mobile">
                 <ion-icon name="arrow-back-outline" id="upBtn-mobile"></ion-icon>
@@ -358,50 +354,47 @@
         var upBtnMobile = document.getElementById("upBtn-mobile");
 
         var headingContent = [
-            "Website Design and Development",
-            "App Design and Development",
             "Bespoke Software Development",
             "E-commerce Solutions",
-
+            "Website Design and Development",
+            "App Design and Development",
         ];
         var textContent = [
+            "Our team of experienced developers will work with you to create custom software that meets the unique needs of your business and drives results. Whether you're looking to automate your processes, streamline your workflow, or develop a new software solution, we have the expertise and resources to make it happen.",
+            "Our team will work with you to design and develop an online store that is not only easy to use but also optimized for maximum sales. With a focus on delivering results, we'll help you build an e-commerce platform that drives business success.",
             "A professional website is the cornerstone of your online presence. Our team of experts will work with you to design and develop a website that is not only visually stunning, but also user-friendly and optimized for search engines. With a focus on delivering results, we'll help you build a website that truly represents your brand and drives business success.",
             "Our team of experienced designers and developers will work with you to create a custom app that meets the unique needs of your business and exceeds your expectations. Whether you're looking to build a simple utility app or a complex, feature-rich app, we have the expertise and resources to make it happen.",
-            "Our team of experienced developers will work with you to create custom software that meets the unique needs of your business and drives results. Whether you're looking to automate your processes, streamline your workflow, or develop a new software solution, we have the expertise and resources to make it happen.",
-            "Our team will work with you to design and develop an online store that is not only easy to use but also optimized for maximum sales. With a focus on delivering results, we'll help you build an e-commerce platform that drives business success."
         ];
         var count = 0;
-        downBtn.onclick = function () {
-            if (count < 0) {
-                count = 3;
-            }
-            heading.innerHTML = headingContent[count];
-            text.innerHTML = textContent[count];
-            count--;
-        }
-        downBtnMobile.onclick = function () {
-            if (count < 0) {
-                count = 3;
-            }
-            headingMobile.innerHTML = headingContent[count];
-            textMobile.innerHTML = textContent[count];
-            count--;
-        }
+
+        heading.innerHTML = headingContent[count];
+        text.innerHTML = textContent[count];
+
+        headingMobile.innerHTML = headingContent[count];
+        textMobile.innerHTML = textContent[count];
+
         upBtn.onclick = function () {
-            if (count > 3) {
-                count = 0;
-            }
+            count = (count + 1) % headingContent.length;
             heading.innerHTML = headingContent[count];
             text.innerHTML = textContent[count];
-            count++;
         }
+
+        downBtn.onclick = function () {
+            count = (count - 1 + headingContent.length) % headingContent.length;
+            heading.innerHTML = headingContent[count];
+            text.innerHTML = textContent[count];
+        }
+
         upBtnMobile.onclick = function () {
-            if (count > 3) {
-                count = 0;
-            }
+            count = (count + 1) % headingContent.length;
             headingMobile.innerHTML = headingContent[count];
             textMobile.innerHTML = textContent[count];
-            count++;
+        }
+
+        downBtnMobile.onclick = function () {
+            count = (count - 1 + headingContent.length) % headingContent.length;
+            headingMobile.innerHTML = headingContent[count];
+            textMobile.innerHTML = textContent[count];
         }
     </script>
 </body>
