@@ -237,7 +237,7 @@ nav li a {
 }
 .container section:nth-child(6){
     /* background-color: var(--smoke-black); */
-    background-image: url("../images/sharp.png") !important;
+    background-image: url(../images/sharp.png) !important;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
