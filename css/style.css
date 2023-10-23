@@ -747,7 +747,7 @@ footer {
         flex-direction: column;
         justify-content: center;
     }
-    .form .input, button {
+    .form>.input, form>button {
         height: 6vh;
     }
     .form .input-large {
