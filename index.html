@@ -33,7 +33,7 @@
         <!-- <p class="black"
             style="text-decoration: none; color: var(--smoke-black); display: block; font-weight: 600; font-size: 2.5vw; font-family: 'Poppins', sans-serif;">
             Didact</p> -->
-        <img src="images/logo.png" style="width: auto; height: 30px;"/>
+        <img src="images/logo.png" style="width: auto; height: 30px;" />
         <ul>
             <li class="active"><a href="#home" data-menu-top="0">Home</a></li>
             <li><a href="#about" data-menu-top="100">About</a></li>
@@ -161,8 +161,8 @@
     <!-------------------------------------------------- MOBILE DISPLAY ----------------------------------------------------------------------------->
     <nav class="nav" id="small-devices">
         <!-- <h3 style="color:white">DIDACT</h3> -->
-        <img src="images/logo-white.png" style="width: auto; height: 30px;"/>
-        
+        <img src="images/logo-white.png" style="width: auto; height: 30px;" />
+
         <div class="menu">
             <strong></strong>
             <strong></strong>
@@ -171,7 +171,7 @@
     </nav>
     <aside class="sidebar">
         <!-- <h3>DIDACT</h3> -->
-        <img src="images/logo-white.png" style="width: auto; height: 30px;"/><br /><br />
+        <img src="images/logo-white.png" style="width: auto; height: 30px;" /><br /><br />
 
         <a href="#home_">Home</a>
         <a href="#about_">About</a>
@@ -192,6 +192,7 @@
         <a href="tel:+264814125726">Call Us</a>
         <a href="mailto:info@didactdigital.com">Send an Email</a>
     </aside>
+    <div class="sidebarOverlay"></div>
     <div class="mobile-device">
         <section id="home_">
             <div class="content-mobile">
@@ -297,6 +298,14 @@
 
         menu.addEventListener('click', function () {
             sidebar.classList.toggle("show");
+        });
+
+        // Event listener for clicking on the content area
+        document.querySelector('.mobile-device').addEventListener('click', function (event) {
+            // Check if the sidebar is visible and if the clicked element is not part of the sidebar
+            if (sidebar.classList.contains('show') && !event.target.closest('.sidebar')) {
+                sidebar.classList.remove('show'); // Hide the sidebar
+            }
         });
 
         AOS.init();
