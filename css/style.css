@@ -720,7 +720,7 @@ footer {
 
     .sidebar.show+.sidebarOverlay {
         /* Show overlay only when sidebar is shown */
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.6);
         /* Semi-transparent black background */
     }
 
