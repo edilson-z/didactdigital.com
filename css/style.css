@@ -725,12 +725,9 @@ footer {
         /* Semi-transparent black background */
     }
 
-    .sidebar h3 {
-        text-decoration: none;
-        color: var(--smoke);
-        display: block;
-        font-weight: 600;
-        font-size: 34px;
+    .sidebar h4 {
+        margin-bottom: 10px;
+        font-weight: bold;
         font-family: 'Poppins', sans-serif;
     }
 
@@ -739,7 +736,7 @@ footer {
         padding: 8px;
         color: #fff;
         text-decoration: none;
-        border-bottom: 1px solid #555;
+        /* border-bottom: 1px solid #555; */
     }
 
     .menu {
