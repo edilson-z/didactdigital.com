@@ -733,6 +733,7 @@ footer {
 
     .sidebar a {
         display: block;
+        font-size: 16px;
         padding: 8px;
         color: #fff;
         text-decoration: none;
