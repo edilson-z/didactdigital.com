@@ -286,7 +286,7 @@
                 info@didactdigital.com <br />
                 13 Mozart Street, Windhoek <br /><br />
 
-                <br />Copyright &copy didactdigital.com 2024. 
+                <br />Copyright &copy didactdigital.com 2024.
                 <br />All rights reserved. <br /><br />
             </footer>
         </section>
@@ -307,6 +307,14 @@
             if (sidebar.classList.contains('show') && !event.target.closest('.sidebar')) {
                 sidebar.classList.remove('show'); // Hide the sidebar
             }
+        });
+
+        // Add event listeners to sidebar links to close the sidebar when a link is clicked
+        var sidebarLinks = document.querySelectorAll('.sidebar a');
+        sidebarLinks.forEach(function (link) {
+            link.addEventListener('click', function () {
+                sidebar.classList.remove('show');
+            });
         });
 
         AOS.init();
@@ -382,7 +390,7 @@
             "App Design and Development",
             "Data analytics and Visualisation",
             "Automation & integration",
-            
+
         ];
         var textContent = [
             "Our team of experienced developers will work with you to create custom software that meets the unique needs of your business and drives results. Whether you're looking to automate your processes, streamline your workflow, or develop a new software solution, we have the expertise and resources to make it happen.",
